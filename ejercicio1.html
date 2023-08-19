@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/ejercicio1.css">
+    <title>ejercicio1</title>
+</head>
+
+<body>
+    <div>
+        <nav class="nav navbar">
+            <div class="container-fluid">
+                <img class="logo container" src="assets/img/horizontalYellow.png" alt="">
+            </div>
+        </nav>
+    </div>
+
+    <!-- SIDEBAR -->
+
+    <section class="row">
+        <div class="col-2" id="sidebar">
+            <ul class="lista list-unstyled components d-flex flex-column">
+                <h6>Ejercicios</h6>
+                <p class="d-inline-flex gap-1">
+                    <a class="btnLogica btn" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                        aria-expanded="false" aria-controls="collapseExample"1>
+                        Lógica 1
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample1">
+                    <div class="collapseLista card card-body">
+                        <ul>
+                            <li>
+                                <a href="ejercicio1.html">Ejercicio 1</a>
+                            </li>
+                            <li>
+                                <a href="ejercicio2.html">Ejercicio 2</a>
+                            </li>
+                            <li>
+                                <a href="#ejercicio3.html">Ejercicio 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Ejercicio 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Ejercicio 5</a>
+                            </li>
+                            <li>
+                                <a href="#">Ejercicio 6</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="d-inline-flex gap-1">
+                    <a class="btnLogica btn" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        otra vaina
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="collapseLista card card-body">
+                        <ul>
+                            <li>
+                                <a href="#">chupalin</a>
+                            </li>
+                            <li>
+                                <a href="#">chupalon</a>
+                            </li>
+                            <li>
+                                <a href="#">chupalonson</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+        <div class="col-10">
+            <section class="d-flex justify-content-center align-items-center">
+                <form class="formulario" id="formulario">
+                    <div class="topYellow container d-flex justify-content-center align-items-center">Ejercicio 1</div>
+                    <p class="parrafo d-flex justify-content-center container">se necesitan sumar los numeros del 1 a n, donde n es un numero que le pedimos al usuario.</p>
+                    <div class="inputsDiv d-flex justify-content-center align-items-center flex-column">
+                        <label for="fname">numero:</label><br>
+                        <input type="text" id="numero"><br>
+                        <label for="lname">resultado:</label><br>
+                        <input type="text" id="resultado">                        
+                        <div>
+                            <button type="button" class="botones btn btn-sm" id="btnSumar" onclick="add()">Sumar</button>
+                            <button type="button" class="botones btn btn-sm" id="btnReset" onclick="reset()">Reset</button>
+                        </div>
+                    </div>
+                </form>                
+            </section>
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/ejercicio1.js"></script>
+</body>
+
+</html>

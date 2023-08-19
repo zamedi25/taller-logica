@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: 'Lucida';
+    src: url(../fonts/lucon.ttf);
+}
+
+@font-face {
+    font-family: 'Monument';
+    src: url(../fonts/PPMonumentExtended-Regular.otf);
+}
+
+:root {
+    --Amarillo-color: #e4af00;
+    --gris-color: #e6e6e6;
+    --black-color: #1a1a1a;
+}
+
+
+body    {
+    background-color: var(--gris-color);
+}
+
+.divLeft    {
+    margin-top: 100px;
+    padding-left: 150px;
+    padding-right: 40px;
+}
+
+.logo   {
+    width: 250px;
+    justify-content: start;
+}
+
+.tituloForm     {
+    font-family: 'Monument';
+}
+
+/*FORMULARIO*/
+
+.form {
+    margin-top: 30px;
+    max-width: 350px;
+
+}
+
+.form-title {
+    font-size: 4.1rem;
+    line-height: 100px;
+    font-weight: 600;
+    text-align: start;
+    color: var(--Amarillo-color);
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input, .form button {
+    outline: none;
+    border: 1px solid #f3f4f7;
+    margin: 8px 0;
+}
+
+.input-container input {
+    background-color: #fff;
+    color: var(--black-color);
+    padding: 1rem;
+    padding-right: 3rem;
+    font-family: 'Lucida';
+    line-height: 1.25rem;
+    width: 350px;
+    border-radius: 0.5rem;
+}
+
+
+.submit {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: var(--Amarillo-color);
+    color: var(--black-color);
+    font-family: 'Lucida';
+    line-height: 1.25rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+
+/*FORMULARIO TERMINA*/ 
+
+.imagensota     {
+width: 800px;
+height: 680px;
+}

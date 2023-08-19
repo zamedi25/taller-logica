@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Lucida';
+    src: url(../fonts/lucon.ttf);
+}
+
+@font-face {
+    font-family: 'Monument';
+    src: url(../fonts/PPMonumentExtended-Regular.otf);
+}
+
+:root {
+    --Amarillo-color: #e4af00;
+    --gris-color: #e6e6e6;
+    --black-color: #1a1a1a;
+    --darkgray-color: #b5b5b5;
+}
+
+
+body    {
+    background-color: var(--darkgray-color);
+    overflow: hidden;
+}
+
+.logo   {
+    width: 240px;
+    padding: 5px;
+}
+
+.nav     {
+    background-color: var(--black-color) !important;
+    border-bottom: 4px solid var(--Amarillo-color);
+    
+
+}
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: auto;
+    height: 100vh;
+    background: var(--black-color);
+    color: var(--gris-color);
+    padding-left: 30px;
+}
+
+.btnLogica  {
+    color: var(--Amarillo-color) !important;
+
+
+}
+
+.collapseLista  {
+    background-color: var(--black-color)
+
+}
+
+.lista  {
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.lista a {
+    text-decoration: none;
+    color: var(--gris-color);
+    font-family: 'Lucida';
+}
+
+.lista h6   {
+    font-family: 'monument';
+}
+
+#dropdowns  {
+    color: var(--Amarillo-color);
+}
+
+.formulario  {
+    width: 400px;
+    height: 420px;
+    background-color: var(--black-color);
+    margin-top: 70px;
+}
+
+.topYellow  {
+    width: 100%;
+    height: 50px;
+    background-color: var(--Amarillo-color);
+    color: var(--black-color);
+    font-family: 'Lucida';
+}
+
+.parrafo    {
+    color: var(--gris-color);
+    padding: 20px 70px;
+    font-family: 'Lucida';
+    font-size: small;
+}
+
+.inputsDiv label {
+    color: var(--Amarillo-color);
+    font-family: 'Lucida';
+    font-size: small;
+    line-height: 1px !important;
+}
+
+.inputsDiv  {
+    line-height: 15px;
+}
+
+.inputsDiv input {
+    width: 260px;
+}
+
+.botones   {
+    background-color: var(--Amarillo-color);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 128px;
+    font-family: 'Lucida';
+    font-size: small;
+}
+
+.botones :hover {
+    background-color: var(--Amarillo-color) !important;
+    color: var(--gris-color);
+}
+
+#resultado  {
+    height: 70px;
+    padding-bottom: 20px;
+}
