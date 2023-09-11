@@ -73,7 +73,7 @@ divEj1.innerHTML += `
 // EJERCICIO 2
 
 
-
+console.log("EJERCICIO2")
 
 class Vehiculo  {
     constructor(marca, modelo){
@@ -123,7 +123,7 @@ vehiculo2.acelerar()
 //EJERCICIO 3 & 6
 
 
-
+console.log("EJERCICIO 3-6")
 
 
 class CuentaBancaria    {
@@ -144,23 +144,21 @@ class CuentaBancaria    {
 
 let cuenta = new CuentaBancaria(200000)
 
+
 console.log(cuenta)
 
-
-
-// let deposito = new saldo.depositar('50000')
-// let retiro = new saldo.retirar(`${saldo} - 20000`)
 
 cuenta.depositar(50000)
 cuenta.retirar(30000)
 
-
+console.log(cuenta)
+// console.log(`su saldo total es de ${cuenta}`)
 
 
 //EJERCICIO 4
 
 
-
+console.log("EJERCICIO 4")
 
 
 class Figura    {
@@ -207,6 +205,7 @@ console.log(rectanguloCalculo.calcularArea())
 
 
 
+console.log("EJERCICIO 5")
 
 
 class Direccion {
@@ -224,9 +223,11 @@ class Persona   {
 }
 
 const direccionsita = new Direccion(1234, 'Bogotin', 1241583458)
+console.log(direccionsita)
 const personita = new Persona(direccionsita.calle)
-
 console.log(personita)
+console.log("me funciona la istancia sola pero no cuando la uno con un console.log tipo string")
+console.log(`Cosme Fulanito vive por la calle ${personita}`)
 
 //     unaDireccion() {
 //         console.log(`la direccion de Cosme Fulanito es: ${this.calle}, ciudad: ${this.ciudad}, codigo postal:${this.codigoPostal},`)
@@ -255,7 +256,7 @@ console.log(personita)
 // EJERCICIO 7
 
 
-
+console.log("EJERCICIO 7")
 
 
 class Animal {
