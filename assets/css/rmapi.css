@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Lucida';
+    src: url(../fonts/lucon.ttf);
+}
+
+@font-face {
+    font-family: 'Monument';
+    src: url(../fonts/PPMonumentExtended-Regular.otf);
+}
+
+:root {
+    --Amarillo-color: #e4af00;
+    --gris-color: #e6e6e6;
+    --black-color: #1a1a1a;
+    --darkgray-color: #b5b5b5;
+}
+
+
+body    {
+    background-color: var(--darkgray-color);
+    overflow-x: hidden;
+}
+
+.logo   {
+    width: 240px;
+    padding: 5px;
+}
+
+.nav     {
+    background-color: var(--black-color) !important;
+    border-bottom: 4px solid var(--Amarillo-color);
+    width: auto;
+
+}
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    height: auto;
+    background: var(--black-color);
+    color: var(--gris-color);
+    padding-left: 30px;
+}
+
+.btnLogica  {
+    color: var(--Amarillo-color) !important;
+
+
+}
+
+.collapseLista  {
+    background-color: var(--black-color)
+
+}
+
+.lista  {
+    margin-top: 20px;
+    line-height: 50px;
+}
+
+.lista a {
+    text-decoration: none;
+    color: var(--gris-color);
+    font-family: 'Lucida';
+}
+
+.lista h6   {
+    font-family: 'monument';
+}
+
+#dropdowns  {
+    color: var(--Amarillo-color);
+}
+
+
+#espacioPersonajes{
+    overflow-y: auto;
+    height: 100vh;
+}
+
+#cartasPersonajes   {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.cartica      {
+    background-color: var(--Amarillo-color);
+    border: solid 2px var(--black-color);
+    font-family: 'Lucida';
+}
+
+.cartica li       {
+    background-color: var(--black-color);
+    color: var(--gris-color);
+    border: solid 1px var(--Amarillo-color);
+}
+
