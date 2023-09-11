@@ -12,7 +12,7 @@ class TeclaPiano {
 
 
 let tDo = new TeclaPiano('assets/sound/nota1.mp3')
-const t1 = document.querySelector("#tp1")
+const t1 = document.querySelector("#t1")
 t1.addEventListener("click", () => {
     tDo.activarSonido()
 })

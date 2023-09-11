@@ -75,28 +75,33 @@ divEj1.innerHTML += `
 
 
 
-
-class vehiculo  {
+class Vehiculo  {
     constructor(marca, modelo){
         this.marca = marca
         this.modelo = modelo
     } 
     arrancar(){
-        console.log(`El vehiculo ${this.marca} ${this.modelo} es el mejor carrito del mundi`)
+        console.log(`El vehiculo ${this.marca} ${this.modelo} comenzo a arrancar`)
     }
     detener(){
-        console.log(`El vehiculo ${this.marca} ${this.modelo} se detiene a`)
+        console.log(`El vehiculo ${this.marca} ${this.modelo} se detiene`)
     }
     
 }
 
-let vehiculo1 = new vehiculo("Toyota", "Yaris")
-let vehiculo2 = new vehiculo("Renault", "Logan")
+let vehiculo1 = new Vehiculo("Toyota", "Yaris")
+// let divEj2 = document.querySelector("#ejercicio2")
+// divEj2.innerHTML += `
+// <button type="button" class="btn btnArrancar" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+//     ${vehiculo1.arrancar()}
+// </button>
+// `
 
-console.log(vehiculo1.arrancar)
 vehiculo1.arrancar()
+vehiculo1.detener()
 
-class coche extends vehiculo    {
+
+class Coche extends Vehiculo    {
     constructor(marca, modelo, velocidad){
         super(marca, modelo)
         this.velocidad = velocidad
@@ -107,8 +112,9 @@ class coche extends vehiculo    {
 
 }
 
-let vehiculo3 = new coche("Toyota", "Corsa", "160kmh")
-vehiculo3.acelerar()
+let vehiculo2 = new Coche("Toyota", "Corsa", "160kmh")
+vehiculo2.acelerar()
+
 
 
 
@@ -120,7 +126,7 @@ vehiculo3.acelerar()
 
 
 
-class cuentaBancaria    {
+class CuentaBancaria    {
     #saldo = 0
 
     constructor(saldo){
@@ -136,7 +142,7 @@ class cuentaBancaria    {
     }
 }
 
-let cuenta = new cuentaBancaria(200000)
+let cuenta = new CuentaBancaria(200000)
 
 console.log(cuenta)
 

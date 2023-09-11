@@ -99,7 +99,7 @@ body    {
 }
 
 
-.espacioDiv {
+.espacioDiv      {
     flex-direction: column;
     margin-top: 50px;
     display: flex;
@@ -109,6 +109,14 @@ body    {
     
 }
 
-.ejercicio1     {
-    width: 800px;
+#ejercicio2     {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ejercicio2 button     {
+    background-color: var(--black-color);
+    color: var(--gris-color);
+    width: 100px;
+    height: 50px;
 }
