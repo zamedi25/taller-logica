@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/oop.css">
+    <title>DFS</title>
+</head>
+
+<body>
+    <div>
+        <nav class="nav navbar">
+            <a class="container-fluid" href="index.html">
+                <img class="logo container" src="assets/img/horizontalYellow.png" alt="" href="index.html">
+            </a>
+        </nav>
+    </div>
+
+    <!-- SIDEBAR -->
+
+    <section class="row">
+        <div class="col-2" id="sidebar">
+            <ul class="lista list-unstyled components d-flex flex-column">
+                <h6>Ejercicios</h6>
+                <p class="d-inline-flex gap-1">
+                    <a class="btnLogica btn" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                        aria-expanded="false" aria-controls="collapseExample"1>
+                        Lógica 1
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample1">
+                    <div class="collapseLista card card-body">
+                        <ul>
+                            <li>
+                                <a href="ejercicio1.html">Ejercicio 1</a>
+                            </li>
+                            <li>
+                                <a href="ejercicio2.html">Ejercicio 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Ejercicio 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Ejercicio 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Ejercicio 5</a>
+                            </li>
+                            <li>
+                                <a href="#">Ejercicio 6</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="d-inline-flex gap-1">
+                    <a class="btnLogica btn" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        API
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="collapseLista card card-body">
+                        <ul>
+                            <li>
+                                <a href="rmapi.html">Rick and Morty</a>
+                            </li>
+                            <li>
+                                <a href="#">chupalon</a>
+                            </li>
+                            <li>
+                                <a href="#">chupalonson</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p class="d-inline-flex gap-1">
+                    <a class="btnLogica btn" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        CLASS
+                    </a>
+                </p>
+    
+                <div class="collapse" id="collapseExample">
+                    <div class="collapseLista card card-body">
+                        <ul>
+                            <li>
+                                <a href="oop.html">Ejercicios</a>
+                            </li>
+                            <li>
+                                <a href="classPiano.html">Piano con Js</a>
+                            </li>
+                            <li>
+                                <a href="#">chupalon</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="d-inline-flex gap-1">
+                    <a class="btnLogica btn" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        MONGO
+                    </a>
+                </p>
+    
+                <div class="collapse" id="collapseExample">
+                    <div class="collapseLista card card-body">
+                        <ul>
+                            <li>
+                                <a href="mongotaller.html">Taller Mongito</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </ul>
+        
+        </div>
+
+        
+        <div class="col-10" id="espacioPersonajes">
+            <section class="container">
+
+                <!-- EJERCICIO 1 -->
+
+                <div class="espacioDiv px-5">
+                    <div>Ejercicio 1</div>
+                    <p>Existe una confusión con un empleado Tara Parrot, los de seguridad requieren saber si esta persona tiene permitido el acceso a la empresa, para ello requieren un script donde se consulte la información solicitada además de la identificación de la persona.
+                    </p>
+                    <img src="assets/img/mongo cmd/image.png" alt="">
+                </div>
+
+                <!-- EJERCICIO 2 -->
+
+                <div class="espacioDiv px-5">
+                    <div>Ejercicio 2</div>
+                    <p>
+                        El día 30 de abril de 2021 hubo una filtración de seguridad en una de las empresas donde DFW presta sus servicios de desarrollo que afectó los departamentos de contabilidad, recursos humanos y ventas.
+                    </p>
+                    <ul>
+                        <li>
+                            Se requiere la lista de desarrolladores que trabaja con la empresa Skyndu
+                        </li>
+                        <li>
+                            Se requiere la lista de empleados que están inactivos
+                        </li>
+                        <li>
+                            Se requiere la lista de empleados que ingresaron en la fecha mencionada donde debe de estar nombre, apellidos, identificación, ciudad, nivel de desarrollador y correo
+                        </li>
+                        <li>
+                            Agregar un campo en el registro de o las personas culpables con el nombre de los servicios afectados donde se listen los departamentos de la empresa que estuvieron involucrados en la afectación
+                        </li>
+                    </ul>
+                    <img class="w-50" src="assets/img/mongo cmd/ej2.png" alt="">
+                    <div class="m-5">
+                        Agregar un campo en el registro de o las personas culpables con el nombre de los servicios afectados donde se listen los departamentos de la empresa que estuvieron involucrados en la afectación
+                    </div>
+                    <img class="w-75" src="assets/img/mongo cmd/ej2D.png" alt="">
+                </div>
+
+                <!-- EJERCICIO 3 -->
+
+                <div class="espacioDiv px-5">
+                    <div>Ejercicio 3</div>
+                    <p>
+                        Se requiere la lista de empleados que tengan la edad entre 20 y 30 años que estén activas
+                    </p>
+                    <ul>
+                        <li>
+                            aquellos empleados que tengan 5 reportes actualizar el campo activo de verdadero a falso
+                        </li>
+                        <li>
+                            para empleados que tengan 3 o 4 reportes se debe de crear un campo llamado "periodo_prueba" de tipo booleano donde el valor sea true si se cumple la condición dada
+                        </li>
+
+                    </ul>
+
+                    <img class="w-75" src="assets/img/mongo cmd/ej3.png" alt="">
+                    <div class="m-5">
+                        aquellos empleados que tengan 5 reportes actualizar el campo activo de verdadero a falso
+                    </div>
+                    <img  src="assets/img/mongo cmd/ej3A.png" alt="">
+
+                    <div class="m-5">
+                        campo llamado "periodo_prueba" de tipo booleano donde el valor sea true si se cumple la condición dada
+                    </div>
+                    <img  src="assets/img/mongo cmd/ej3B.png" alt="">
+
+                </div>
+
+
+                <!-- EJERCICIO 4 -->
+
+                <div class="espacioDiv px-5">
+                    <div>Ejercicio 4</div>
+                    <p>
+                        DFW requiere depurar la base de datos de aquellas personas que tengan el número de reportes negativos entre 0 y 2, además de ello que su estado de empleado actual sea falso y que no estén carnetizados
+                    </p>
+                    <img src="assets/img/mongo cmd/ej4.png" alt="">
+                </div>
+                
+
+                <!-- EJERCICIO 5 -->
+
+
+                
+                <div class="espacioDiv px-5">
+                    <div>Ejercicio 5</div>
+                    <p>
+                        Para gestión de recursos humanos DFW requiere crear un nuevo estado en el campo de seguridad_social para aquellas personas que no tengan registro en la base de datos y además de ello que el estado de empleado actual sea activo, el nombre del estado que se registrara es "PENDIENTE"
+                    </p>
+                    <img class="w-75" src="assets/img/mongo cmd/ej5.png" alt="">
+                    <div class="m-5">
+                        si el estado de empleado actual sea activo, el nombre del estado que se registrara es "PENDIENTE"
+                    </div>
+                    <img  src="assets/img/mongo cmd/ej5.2.png" alt="">
+                </div>
+
+
+                <!-- EJERCICIO 6 -->
+
+
+
+                <div class="espacioDiv px-5">
+                    <div>Ejercicio 6</div>
+                    <p>
+                        La empleada Stephi Dunbar con numero de identificacion 654132864786 envio una solicitud para el cambio del banco al cual se le consigna la nómina, esta requiere que cambie de "CITYBANK" a "BBVA", para este cambio es necesario el numero de identificacion, comprobar que la seguridad social esté activa y reemplazar número de cuenta anterior por 986132167973216
+                    </p>
+                    <ul>
+                        <li>
+                            Si la empleada no cuenta con alguno de estos datos realice la respectiva actualización
+                        </li>
+                    </ul>
+
+                    <img  src="assets/img/mongo cmd/ej6.png" alt="">
+
+                </div>
+
+
+
+                <!-- EJERCICIO 7 -->
+
+
+
+                <div class="espacioDiv px-5">
+                    <div>Ejercicio 7</div>
+                    <p>
+                        Se requiere el número de empleados que se encuentran trabajando en "Amsterdam"
+                    </p>
+                    <img class="m-5" src="assets/img/mongo cmd/ej7.png" alt="">
+                    <div class="mb-5">
+                        No hay empleados que trabajen desde Amsterdam
+                    </div>
+                </div>
+
+
+
+            </section>
+        </div>    
+
+
+
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/oop.js"></script>
+</body>
+
+</html>
