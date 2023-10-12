@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pokeapi.css">
     <title>DFS</title>
 </head>
 
@@ -121,17 +121,26 @@
             </ul>
         </div>
 
-        <div class="col-10">
-            <div class="d-flex justify-content-center align-items-center">
-            asdasdasdsadadsads
-            </div>
-        </div>
-
+        <div class="col-10" id="espacioPersonajes">
+            <section class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row row-cols-1 row-cols-md-4 g-4" id="cartasPokemon"></div>
+                    </div>
+                </div>
+                <div id="botonesApi" class="botonesApi">
+                    <!-- <button type="submit">previous</button>
+                    <button type="submit">next</button> -->
+                </div>
+            </section>
+        </div>    
     </section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/pokeapi.js"></script>
 </body>
 
 </html>

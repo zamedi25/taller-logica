@@ -81,24 +81,15 @@ class Vehiculo  {
         this.modelo = modelo
     } 
     arrancar(){
-        console.log(`El vehiculo ${this.marca} ${this.modelo} comenzo a arrancar`)
+        return `El vehiculo ${this.marca} ${this.modelo} comenzo a arrancar`
     }
     detener(){
-        console.log(`El vehiculo ${this.marca} ${this.modelo} se detiene`)
+        return `El vehiculo ${this.marca} ${this.modelo} se detiene`
     }
     
 }
 
-let vehiculo1 = new Vehiculo("Toyota", "Yaris")
-// let divEj2 = document.querySelector("#ejercicio2")
-// divEj2.innerHTML += `
-// <button type="button" class="btn btnArrancar" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-//     ${vehiculo1.arrancar()}
-// </button>
-// `
 
-vehiculo1.arrancar()
-vehiculo1.detener()
 
 
 class Coche extends Vehiculo    {
@@ -107,15 +98,35 @@ class Coche extends Vehiculo    {
         this.velocidad = velocidad
     }
     acelerar(){
-        console.log(`El vehiculo ${this.marca} ${this.modelo} alcanza una velocidad de ${this.velocidad}`)
+        return `El vehiculo ${this.marca} ${this.modelo} alcanza una velocidad de ${this.velocidad}`
     }
-
+    
 }
+
+
+let vehiculo1 = new Vehiculo("Toyota", "Yaris")
+vehiculo1.arrancar()
+vehiculo1.detener()
 
 let vehiculo2 = new Coche("Toyota", "Corsa", "160kmh")
 vehiculo2.acelerar()
 
+let divEj2 = document.querySelector("#ejercicio2")
+divEj2.innerHTML += `
+<button type="button" class="btn btnArrancar" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content=" ${vehiculo1.arrancar()}">
+    arrancar
+</button>
+<button type="button" class="btn btnArrancar" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content=" ${vehiculo1.detener()}">
+    detener
+</button>
+<button type="button" class="btn btnArrancar" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content=" ${vehiculo2.acelerar()}">
+    acelerar
+</button>
 
+`
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 
 
